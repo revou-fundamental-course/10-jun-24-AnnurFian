@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Merubah Suhu</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Website Merubah Suhu</h1>
+        </header>
+        <table border="1px" align="center">
+            <tr>
+                <td><img class="gambar" src="assets/gambarsuhu.webp" alt="GambarSuhu"></td>
+            </tr>
+        </table>
+                <figcaption>Gambar Suhu</figcaption>
+        <article>
+            <p>Halo ini adalah website merubah suhu dari celcius ke farenheit dan sebaliknya. Untuk rumusnya ada dibawah ini</p>
+            <p>Rumus Celsius ke Farenheit</p>
+            <details>
+                <summary>Klik</summary>
+                rumus ada di sini : (9 / 5) * C + 32 
+            </details>
+            <p>Rumus Farenheit ke Celcius</p>
+            <details>
+                <summary>Klik</summary>
+                rumus ada disini : 5 / 9 * (F - 32)
+            </details>
+        </article>
+
+        <main>
+
+        <!-- section inputan -->
+        <section class="inputansuhu">
+            <!-- input celcius ke fahrenheit -->
+            <section class="suhu">
+                <p>Celsius (&deg;C)</p>
+                <textarea name="" id="celcius"></textarea>
+            </section>
+            <p><=></p>
+            <!-- input fahrenheit ke celcius -->
+            <section class="suhu">
+                <p>Fahreinheit (&deg;F)</p>
+                <textarea name="" id="fahrenheit"></textarea>
+            </section>
+        </section>
+            
+            <!-- button konversi, reset, reverse -->
+            <section class="button">
+                    <button class="buttonkonversi" type="button" onclick="celciusfarenheit()">Konversi</button>
+                    <button class="buttonreset" type="reset" onclick="resetdata()">Reset</button>
+                    <button class="buttonreverse" type="button" onclick="fahrenheitcelcius()">Reverse</button> 
+            </section>
+            
+            <!-- rumus yang digunakan -->
+            <section class="outputrumus">
+                <p>Rumus yang digunakan :</p>
+                <textarea name="" id="rumus"></textarea>
+            </section>
+        </main>
+        
+
+
+        <footer>Dibuat pada Tanggal 14 Juni 2024</footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
